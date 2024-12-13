@@ -21,6 +21,8 @@ def part01():
 
     print(result)
 
+part01()
+
 def part02():
     frequency = dict()
     for i in second:
