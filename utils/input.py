@@ -8,4 +8,4 @@ def read_input(filename: Path):
 
 def read_lines(filename: Path):
     with open(INPUT_PATH / filename, "r") as f:
-        return f.readlines()
+        return [l.strip() for l in f.readlines()]
