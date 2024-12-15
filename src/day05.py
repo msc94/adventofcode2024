@@ -53,3 +53,18 @@ def part01():
 
 part01()
 
+def part02():
+    count = 0
+
+    for u in updates:
+        s = sorted(u, key=functools.cmp_to_key(compare))
+        if s != u:
+            middle = get_middle(s)
+            count = count + middle
+
+    print(count)
+
+
+
+part02()
+
