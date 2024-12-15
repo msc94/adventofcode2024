@@ -2,3 +2,4 @@ target
 venv
 .direnv
 __pycache__
+.vscode
