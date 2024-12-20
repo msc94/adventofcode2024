@@ -1,6 +1,6 @@
 from utils.input import read_lines
 
-input = read_lines("day07.txt")
+input = read_lines("day07_example.txt")
 print(input)
 
 
@@ -26,6 +26,8 @@ def possible_combinations(goal, ints):
             combinations.append(current + comb)
         if current * comb <= goal:
             combinations.append(current * comb)
+        if int(str(current) + str(comb)) <= goal:
+            combinations.append(int(str(current) + str(comb)))
 
     return combinations
 
